@@ -71,6 +71,7 @@ public class BluetoothBondHelper {
                         retSuccess.put("success", true);
                         bondingCall.resolve(retSuccess); // Responder con éxito
                         context.unregisterReceiver(this); // Desregistrar el receptor
+                        bondingCall = null; // Limpiar el estado de vinculación
                         break;
     
                     case BluetoothDevice.BOND_NONE:
@@ -79,6 +80,7 @@ public class BluetoothBondHelper {
                         retFail.put("success", false);
                         bondingCall.resolve(retFail); // Responder con fallo
                         context.unregisterReceiver(this); // Desregistrar el receptor
+                        bondingCall = null; // Limpiar el estado de vinculación
                         break;
     
                     case BluetoothDevice.BOND_BONDING:
