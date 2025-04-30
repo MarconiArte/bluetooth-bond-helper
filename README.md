@@ -1,0 +1,19 @@
+# bluetooth-bond-helper
+
+Un plugin auxiliar para manejar eventos de emparejamiento Bluetooth (bonding) en Android.
+
+## Install
+
+```bash
+npm install bluetooth-bond-helper
+npx cap sync
+```
+
+## API
+
+<docgen-index></docgen-index>
+
+<docgen-api>
+<!-- run docgen to generate docs from the source -->
+<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+</docgen-api>
